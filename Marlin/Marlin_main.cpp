@@ -4376,6 +4376,7 @@ inline void gcode_G28(const bool always_home_all) {
     // Home Z last if homing towards the bed
     #if Z_HOME_DIR < 0
       if (home_all || homeZ) {
+        do_blocking_move_to_xy(100, 100);
         #if ENABLED(Z_SAFE_HOMING)
           home_z_safely();
         #else

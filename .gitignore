@@ -140,6 +140,9 @@ vc-fileutils.settings
 .vscode/launch.json
 .vscode/*.db
 
+#atom
+.clang_complete
+.gcc-flags.json
 #cmake
 CMakeLists.txt
 Marlin/CMakeLists.txt
